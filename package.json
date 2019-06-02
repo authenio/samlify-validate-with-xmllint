@@ -1,0 +1,28 @@
+{
+  "name": "@authenio/samlify-validate-with-xmllint",
+  "version": "1.0.0",
+  "description": "Validator module powered by validate-with-xmllint",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "yarn run clean && yarn run cp-schemas && tsc",
+    "cp-schemas": "mkdir -p build/schemas && cp -R schemas build",
+    "clean": "rm -rf build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/authenio/samlify-validate-with-xmllint.git"
+  },
+  "author": "tngan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/authenio/samlify-validate-with-xmllint/issues"
+  },
+  "homepage": "https://github.com/authenio/samlify-validate-with-xmllint#readme",
+  "dependencies": {
+    "validate-with-xmllint": "^1.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^12.0.4",
+    "typescript": "^3.5.1"
+  }
+}
