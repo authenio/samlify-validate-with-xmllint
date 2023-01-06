@@ -1,4 +1,9 @@
+.idea
 node_modules
 yarn*
 *.ts
+!index.d.ts
 tsconfig.json
+
+# don't include the top-level, source schemas. Only the ones in the build dir
+/schemas
